@@ -1,9 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: red;
+    background: #fff;
     margin: 0;
     padding: 0;
+}
+
+body h1 {
+    text-align: center;
 }
 
 nav {
@@ -24,6 +28,11 @@ nav {
     display: inline-block;
     cursor: pointer;
     color: #fff;
+    opacity: 0.8;
+}
+
+.nav-toggle:hover {
+    opacity: 1;
 }
 
 .logo {
