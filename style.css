@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: #fff;
+    background-color: #fffbf0;
     margin: 0;
     padding: 0;
 }
@@ -13,11 +13,13 @@ body h1 {
 nav {
     display: flex;
     height: auto;
+    width: 100%;
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     flex-direction: column;
+    z-index: 999;
 }
 
 .nav-toggle {
@@ -87,13 +89,53 @@ ul li a:hover {
     display: flex;
 }
 
+/*  */
+
+.img {
+    display: flex;
+    width: 100%;
+}
+
+.img img{
+    width: 100%;
+}
+
+/*  */
+
+.main {
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile img {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
 @media screen and (min-width: 1000px) {
     nav {
         height: 44px;
         flex-direction: row;
     }
 
-    .logo{
+    .logo {
         padding-left: 50px;
         margin: 0;
         width: 30%;
@@ -108,7 +150,7 @@ ul li a:hover {
 
     ul li {
         display: inline-block;
-        margin: 0 50px 0 0;
+        margin: 0 100px 0 0;
         text-align: left;
         border-bottom-style: none;
         padding: 0;
@@ -117,4 +159,19 @@ ul li a:hover {
     .nav-toggle {
         display: none;
     }
+
+    .profile {
+        position: absolute;
+        top: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .profile img {
+        max-width: 100%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
 }
+
