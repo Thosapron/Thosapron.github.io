@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background-color: #fffbf0;
+    background-color: #edf0f5;
     margin: 0;
     padding: 0;
 }
@@ -89,8 +89,6 @@ ul li a:hover {
     display: flex;
 }
 
-/*  */
-
 .img {
     display: flex;
     width: 100%;
@@ -100,8 +98,6 @@ ul li a:hover {
     width: 100%;
     height: 100%;
 }
-
-/*  */
 
 .main {
     position: relative;
@@ -123,11 +119,123 @@ ul li a:hover {
 
 .content {
     text-align: center;
-    height: 25rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem;
+    padding-top: 70px;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-body {
+    position: relative;
+    background-color: #d4d8e8;
+    margin-left: 100px;
+    border-radius: 0 10px 10px 0;
+    padding: 5px 0;
+}
+
+.timeline-body:after {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: #29487D;
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #29487D;
+    background-color: #edf0f5;
+    position: absolute;
+    left: -16px;
+    top: 4px;
+    z-index: 999;
+}
+
+.time {
+    position: absolute;
+    left: -130px;
+    top: -8px;
+}
+
+.timeline-content {
+    margin: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #555;
+    text-align: left;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.timeline-ex {
+    max-width: 400px;
+    margin: 0 auto;
+    border-left: 3px solid #616771;
+    padding: 0 20px 0 30px;
+}
+
+.timeline-ex-body {
+    background-color: #d4d8e8;
+    padding: 10px 25px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    line-height: 1.7;
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.timeline-ex-body:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 4px solid #616771;
+    background-color: #edf0f5;
+    position: absolute;
+    top: 10px;
+    left: -41px;
+}
+
+.timeline-ex-body:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+    border-width: 10px;
+    position: absolute;
+    left: -21px;
+    top: 10px;
+}
+
+.timeline-ex-body h4 {
+    margin: 0;
+}
+.timeline-ex-body h3 {
+    margin: 0;
+}
+.timeline-ex-body h2 {
+    margin: 0;
 }
 
 @media screen and (min-width: 1000px) {
@@ -173,6 +281,10 @@ ul li a:hover {
         width: 300px;
         height: 300px;
         border-radius: 50%;
+    }
+
+    .content {
+        padding-top: 150px;
     }
 }
 
