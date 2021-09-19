@@ -245,7 +245,7 @@ ul li a:hover {
 }
 
 .contact .icon {
-    margin: 50px 10px;
+    margin: 50px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,7 +283,7 @@ ul li a:hover {
     color: #fff;
     background: #fff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 15px;
     border-radius: 20px;
     opacity: 0;
