@@ -240,6 +240,132 @@ ul li a:hover {
     margin: 0;
 }
 
+.skills {
+    position: relative;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.skills .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.skills .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.skills .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #d4d8e8;
+}
+
+.skills .percent .technical circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #314752;
+}
+
+.skills .percent .professional circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: #314752;
+}
+
+.skills .percent .personal circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #314752;
+}
+
+.skills .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .percent .number h2 {
+    font-size: 48px;
+}
+
+.skills .percent .number h2 span {
+    font-size: 24px;
+}
+
+.skills .percent .number h2 span p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* .skills {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .card {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.skills .card .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 8px solid #fa4299;
+    border-radius: 50%;
+    border-bottom-color: #edf0f5;
+}
+
+.card .circle .box,
+.card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 38px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+}
+
+.card .circle .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card .text {
+    font-size: 20px;
+} */
+
+
 .contact {
     display: inline-flex;
 }
@@ -386,6 +512,15 @@ ul li a:hover {
         border-radius: 50%;
     }
 
+    .skills {
+        width: 800px;
+        flex-direction: row;
+    }
+
+    .skills .percent {
+        width: 30%;
+    }
+
     .content {
         padding-top: 150px;
     }
@@ -394,4 +529,3 @@ ul li a:hover {
         margin: 50px 20px;
     }
 }
-
