@@ -164,7 +164,7 @@ ul li a:hover {
     position: absolute;
     left: -16px;
     top: 4px;
-    z-index: 999;
+    z-index: 99;
 }
 
 .time {
@@ -231,12 +231,115 @@ ul li a:hover {
 .timeline-ex-body h4 {
     margin: 0;
 }
+
 .timeline-ex-body h3 {
     margin: 0;
 }
+
 .timeline-ex-body h2 {
     margin: 0;
 }
+
+.contact {
+    display: inline-flex;
+}
+
+.contact .icon {
+    margin: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.contact .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 9;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact .icon:hover span i{
+    color: #fff;
+}
+
+.contact .icon .tooltip {
+    position: absolute;
+    top: -60px;
+    color: #fff;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contact .icon:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contact .icon .tooltip:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.contact .phone:hover span,
+.contact .phone:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.contact .phone:hover span,
+.contact .phone:hover .tooltip,
+.contact .phone:hover .tooltip:before {
+    background: #00B900;
+}
+
+.contact .e-mail:hover span,
+.contact .e-mail:hover .tooltip,
+.contact .e-mail:hover .tooltip:before {
+    background: #EA4335;
+}
+
+.contact .github:hover span,
+.contact .github:hover .tooltip,
+.contact .github:hover .tooltip:before {
+    background: #333;
+}
+.contact .facebook:hover span,
+.contact .facebook:hover .tooltip,
+.contact .facebook:hover .tooltip:before {
+    background: #3B5999;
+}
+
+.contact .instagram:hover span,
+.contact .instagram:hover .tooltip,
+.contact .instagram:hover .tooltip:before {
+    background: #e1306c;
+}
+
 
 @media screen and (min-width: 1000px) {
     nav {
@@ -285,6 +388,10 @@ ul li a:hover {
 
     .content {
         padding-top: 150px;
+    }
+
+    .contact .icon {
+        margin: 50px 20px;
     }
 }
 
