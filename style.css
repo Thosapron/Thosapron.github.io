@@ -1,3 +1,5 @@
+/* smartphone version */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -9,6 +11,8 @@ body {
 body h1 {
     text-align: center;
 }
+
+/* navigation bar */
 
 nav {
     display: flex;
@@ -103,6 +107,8 @@ ul li a:hover {
     position: relative;
 }
 
+/* profile page */
+
 .profile {
     position: absolute;
     top: -80px;
@@ -126,6 +132,8 @@ ul li a:hover {
     padding: 3rem;
     padding-top: 70px;
 }
+
+/* education page */
 
 .timeline {
     max-width: 900px;
@@ -184,6 +192,8 @@ ul li a:hover {
     margin-bottom: 15px;
 }
 
+/* experience page */
+
 .timeline-ex {
     max-width: 400px;
     margin: 0 auto;
@@ -213,7 +223,7 @@ ul li a:hover {
     background-color: #edf0f5;
     position: absolute;
     top: 10px;
-    left: -41px;
+    left: -42px;
 }
 
 .timeline-ex-body:after {
@@ -239,6 +249,8 @@ ul li a:hover {
 .timeline-ex-body h2 {
     margin: 0;
 }
+
+/* skills page */
 
 .skills {
     position: relative;
@@ -317,54 +329,7 @@ ul li a:hover {
     font-size: 18px;
 }
 
-/* .skills {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .card {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.skills .card .circle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border: 8px solid #fa4299;
-    border-radius: 50%;
-    border-bottom-color: #edf0f5;
-}
-
-.card .circle .box,
-.card .circle .box span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 38px;
-    font-weight: 600;
-    transform: translate(-50%, -50%);
-}
-
-.card .circle .box {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.card .text {
-    font-size: 20px;
-} */
-
+/* contact page */
 
 .contact {
     display: inline-flex;
@@ -466,6 +431,7 @@ ul li a:hover {
     background: #e1306c;
 }
 
+/* dasktop version */
 
 @media screen and (min-width: 1000px) {
     nav {
